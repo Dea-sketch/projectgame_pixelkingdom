@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Kingdom Adventure</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="screenTransition" class="screenTransition" aria-hidden="true"></div>
+
+<div id="introScreen" class="screen active">
+    <div class="introSky">
+        <div class="pixelCloud cloud1"></div>
+
+        <div class="introBirdFlock" aria-hidden="true">
+            <span class="introBird birdOne"></span>
+            <span class="introBird birdTwo"></span>
+            <span class="introBird birdThree"></span>
+            <span class="introBird birdFour"></span>
+        </div>
+        <div class="introBirds" aria-hidden="true">
+            <div class="crow crow1"><span></span></div>
+            <div class="crow crow2"><span></span></div>
+            <div class="crow crow3"><span></span></div>
+        </div>
+        <div class="pixelCloud cloud2"></div>
+        <div class="pixelCloud cloud3"></div>
+
+        <div class="introMountain mountain1"></div>
+        <div class="introMountain mountain2"></div>
+        <div class="introMountain mountain3"></div>
+        <div class="mountainSnow snow1"></div>
+        <div class="mountainSnow snow2"></div>
+
+        <div class="introCastle">
+            <div class="castleTower leftTower"></div>
+            <div class="castleTower rightTower"></div>
+            <div class="castleCenter">
+                <div class="castleDoor"></div>
+            </div>
+        </div>
+
+        <div class="introGround"></div>
+        <div class="introScenery" aria-hidden="true">
+            <div class="introFlower flowerOne"><i></i><b></b></div>
+            <div class="introFlower flowerTwo"><i></i><b></b></div>
+            <div class="introFlower flowerThree"><i></i><b></b></div>
+            <div class="introFlower flowerFour"><i></i><b></b></div>
+            <div class="introFlower flowerFive"><i></i><b></b></div>
+            <div class="introRock rockOne"></div>
+            <div class="introRock rockTwo"></div>
+            <div class="introRock rockThree"></div>
+            <div class="introRock rockFour"></div>
+        </div>
+
+       <div class="introKnight">
+        <div class="knightHair"></div>
+            <div class="knightHead">
+            <div class="knightEye eyeLeft"></div>
+            <div class="knightEye eyeRight"></div>
+            <div class="knightNose"></div>
+            <div class="knightMouth"></div>
+        </div>
+
+        <div class="knightNeck"></div>
+
+        <div class="knightCape">
+            <div class="capeFold"></div>
+            <div class="capeFold capeFold2"></div>
+            <div class="capeFold capeFold3"></div>
+        </div>
+
+        <div class="knightBody">
+            <div class="armorChest"></div>
+            <div class="armorLine"></div>
+        </div>
+
+        <div class="knightShoulder shoulderLeft"></div>
+        <div class="knightShoulder shoulderRight"></div>
+
+        <div class="knightArm armLeft">
+            <div class="armArmor"></div>
+            <div class="knightHand"></div>
+        </div>
+
+        <div class="knightArm armRight">
+            <div class="armArmor"></div>
+            <div class="knightHand"></div>
+        </div>
+
+        <div class="knightBelt">
+            <div class="beltBuckle"></div>
+        </div>
+
+        <div class="knightLeg legLeft">
+            <div class="legArmor"></div>
+            <div class="boot"></div>
+        </div>
+
+        <div class="knightLeg legRight">
+            <div class="legArmor"></div>
+          <div class="boot"></div>
+        </div>
+
+        <div class="knightSword">
+            <div class="swordBlade"></div>
+            <div class="swordGuard"></div>
+            <div class="swordGrip"></div>
+            <div class="swordPommel"></div>
+        </div>
+    </div>
+
+        <div class="introMonster">
+            <div class="monsterHead">
+                <div class="hair"></div>
+                <div class="ear earLeft"></div>
+                <div class="ear earRight"></div>
+                <div class="brow browLeft"></div>
+                <div class="brow browRight"></div>
+                <div class="eye eye1"></div>
+                <div class="eye eye2"></div>
+                <div class="nose"></div>
+                <div class="mouth"><span></span></div>
+        </div>
+
+        <div class="monsterBody">
+            <div class="shoulderArmor"></div>
+            <div class="monsterArm armLeft">
+            <div class="monsterHand"></div>
+            </div>
+            <div class="monsterArm armRight">
+                <div class="monsterHand"></div>
+            </div>
+            <div class="armorChest"></div>
+            <div class="belt"></div>
+            <div class="pants"></div>
+        </div>
+
+            <div class="monsterLeg monsterLeg1"></div>
+            <div class="monsterLeg monsterLeg2"></div>
+        </div>
+
+        <div class="introtree introtreeLeft">
+            <div class="top">
+                <div class="top-light"></div>
+            </div>
+
+            <div class="branch branch1">
+                <div class="light l1"></div>
+                <div class="light l2"></div>
+                <div class="dark d1"></div>
+            </div>
+
+            <div class="branch branch2">
+                <div class="light l3"></div>
+                <div class="light l4"></div>
+                <div class="dark d2"></div>
+            </div>
+
+            <div class="branch branch3">
+                <div class="light l5"></div>
+                <div class="light l6"></div>
+                <div class="dark d3"></div>
+            </div>
+
+            <div class="trunk">
+                <div class="trunk-light"></div>
+                <div class="trunk-orange"></div>
+            </div>
+        </div>
+
+        <div class="introtree">
+            <div class="top">
+                <div class="top-light"></div>
+            </div>
+
+            <div class="branch branch1">
+                <div class="light l1"></div>
+                <div class="light l2"></div>
+                <div class="dark d1"></div>
+            </div>
+
+            <div class="branch branch2">
+                <div class="light l3"></div>
+                <div class="light l4"></div>
+                <div class="dark d2"></div>
+            </div>
+
+            <div class="branch branch3">
+                <div class="light l5"></div>
+                <div class="light l6"></div>
+                <div class="dark d3"></div>
+            </div>
+
+            <div class="trunk">
+                <div class="trunk-light"></div>
+                <div class="trunk-orange"></div>
+            </div>
+        </div>
+
+        <div class="introTitle">
+            <h1>PIXEL KINGDOM</h1>
+            <p>The Lost Kingdom</p>
+            <button id="startIntro" class="pixelButton largeButton">MULAI CERITA</button>
+        </div>
+    </div>
+</div>
+
+<div id="storyScreen" class="screen">
+    <div class="storyBackground">
+        <video id="storyVideo" class="storyVideo" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+            <source src="story1.mp4" type="video/mp4">
+        </video>
+        <div class="storyVideoMask storyVideoMaskTop" aria-hidden="true"></div>
+        <div class="storyVideoMask storyVideoMaskBottom" aria-hidden="true"></div>
+        <div class="storyBox">
+            <h2 id="storyTitle">Kerajaan Dalam Bahaya</h2>
+            <p id="storyText">
+                Dahulu kala, sebuah kerajaan bernama North Kingdom yang dipimpin oleh Raja Sylvain Etrama Salvatore yang damai tiba-tiba diserang oleh pasukan monster yang datang dari wilayah selatan.
+            </p>
+            <button id="nextStory" class="pixelButton">LANJUT</button>
+        </div>
+    </div>
+</div>
+
+<div id="mainMenu" class="screen">
+    <div class="menuWorld">
+
+        <div class="menuCloud menuCloud1"></div>
+        <div class="menuCloud menuCloud2"></div>
+
+        <div class="menuMountain menuMountain1"></div>
+        <div class="menuMountain menuMountain2"></div>
+
+        <div class="menuCastle">
+            <div class="menuCastleRoof"></div>
+            <div class="menuCastleWindow window1"></div>
+            <div class="menuCastleWindow window2"></div>
+            <div class="menuCastleDoor"></div>
+        </div>
+
+        <div class="menuTrees">
+            <div class="pixelTree treeA"></div>
+            <div class="pixelTree treeB"></div>
+            <div class="pixelTree treeC"></div>
+        </div>
+
+        <div class="menuGround"></div>
+
+        <div class="menuPanel">
+            <div class="logoBadge">PK</div>
+
+            <h1>PIXEL KINGDOM</h1>
+            <p>THE LOST KINGDOM</p>
+
+            <button id="playButton" class="pixelButton menuButton">
+                PLAY
+            </button>
+
+            <button id="skinButton" class="pixelButton menuButton secondaryButton">
+                SKIN
+            </button>
+
+            <button id="musicButton" class="pixelButton musicButton">
+                MUSIC ON
+            </button>
+
+            <small>WASD = Bergerak &nbsp; • &nbsp; Klik Musuh = Serang</small>
+        </div>
+    </div>
+</div>
+
+<div id="skinMenu" class="screen">
+    <div class="panelPage">
+
+        <div class="pageTitle">
+            <h1>PILIH KARAKTER</h1>
+            <p>Pilih class yang akan digunakan</p>
+        </div>
+
+        <div class="skinContainer">
+
+            <div class="skinCard selected" data-skin="knight">
+                <div class="skinPreview knightPreview">
+                    <div class="previewHair knightHair"></div>
+                    <div class="previewHead"></div>
+                    <div class="previewBody knightArmor"></div>
+                    <div class="previewWeapon knightWeapon"></div>
+                    <div class="previewLeg legA"></div>
+                    <div class="previewLeg legB"></div>
+                </div>
+
+                <h2>KNIGHT</h2>
+                <p>sang Ksatria bernama Cadias Drankevall kerajaan dengan pedang warisan yang diberi nama Puella Pluvia Saltans.</p>
+
+                <div class="stat">
+                    <span>Attack</span>
+                    <div class="statBar"><div style="width:90%"></div></div>
+                </div>
+
+                <div class="stat">
+                    <span>Speed</span>
+                    <div class="statBar"><div style="width:65%"></div></div>
+                </div>
+            </div>
+
+            <div class="skinCard" data-skin="archer">
+                <div class="skinPreview archerPreview">
+                    <div class="previewHair archerHair"></div>
+                    <div class="previewHead"></div>
+                    <div class="previewBody archerArmor"></div>
+                    <div class="previewWeapon archerWeapon"></div>
+                    <div class="previewLeg legA"></div>
+                    <div class="previewLeg legB"></div>
+                </div>
+
+                <h2>ARCHER</h2>
+                <p>sang Pemanah cepat yang bernama Morgarian Xanthyr, yang menggunakan panah terkutuknya yang memiliki nama Ballesthia bow.</p>
+
+                <div class="stat">
+                    <span>Attack</span>
+                    <div class="statBar"><div style="width:70%"></div></div>
+                </div>
+
+                <div class="stat">
+                    <span>Speed</span>
+                    <div class="statBar"><div style="width:90%"></div></div>
+                </div>
+            </div>
+
+            <div class="skinCard" data-skin="mage">
+                <div class="skinPreview magePreview">
+                    <div class="previewHair mageHair"></div>
+                    <div class="previewHead"></div>
+                    <div class="previewBody mageArmor"></div>
+                    <div class="previewWeapon mageWeapon"></div>
+                    <div class="previewLeg legA"></div>
+                    <div class="previewLeg legB"></div>
+                </div>
+
+                <h2>MAGE</h2>
+                <p>sang Penyihir kerajaan yang bernama Grizelda Moonwhisper, yang menggunakan tongkat sihirnya yang memiliki nama Atlantea Void.</p>
+
+                <div class="stat">
+                    <span>Attack</span>
+                    <div class="statBar"><div style="width:80%"></div></div>
+                </div>
+
+                <div class="stat">
+                    <span>Magic</span>
+                    <div class="statBar"><div style="width:100%"></div></div>
+                </div>
+            </div>
+
+        </div>
+
+        <button id="backSkin" class="pixelButton backButton">
+            KEMBALI
+        </button>
+
+    </div>
+</div>
+
+<div id="levelMenu" class="screen">
+    <div class="levelWorld">
+
+        <div class="levelPanel">
+
+            <h1>PILIH LEVEL</h1>
+
+            <p class="levelDescription">
+                Selesaikan setiap level untuk membuka wilayah berikutnya.
+            </p>
+
+            <div class="levelButtons">
+
+                <button class="levelButton" data-level="1">
+                    <span class="levelNumberBig">1</span>
+                    <span>Forest Village</span>
+                </button>
+
+                <button class="levelButton locked" data-level="2">
+                    <span class="levelNumberBig">2</span>
+                    <span>Dark Forest</span>
+                    <span class="lockIcon">LOCK</span>
+                </button>
+
+                <button class="levelButton locked" data-level="3">
+                    <span class="levelNumberBig">3</span>
+                    <span>Mountain Pass</span>
+                    <span class="lockIcon">LOCK</span>
+                </button>
+
+                <button class="levelButton locked" data-level="4">
+                    <span class="levelNumberBig">4</span>
+                    <span>Ruined Village</span>
+                    <span class="lockIcon">LOCK</span>
+                </button>
+
+                <button class="levelButton locked bossLevel" data-level="5">
+                    <span class="levelNumberBig">5</span>
+                    <span>Monster Castle</span>
+                    <span class="lockIcon">LOCK</span>
+                </button>
+
+            </div>
+
+            <button id="backLevel" class="pixelButton">
+                KEMBALI
+            </button>
+
+        </div>
+
+    </div>
+</div>
+
+<div id="mapScreen" class="screen">
+    <div class="mapPage">
+        <div class="mapPanel">
+            <div class="mapHeader">
+                <div>
+                    <p class="mapEyebrow">PERJALANAN SANG KSATRIA</p>
+                    <h1 id="mapTitle">FOREST VILLAGE</h1>
+                </div>
+                <div class="mapLevelBadge">LEVEL <span id="mapLevel">1</span></div>
+            </div>
+
+            <div class="kingdomMap" aria-label="Peta perjalanan kerajaan">
+                <div class="mapMountain mapMountainOne"></div>
+                <div class="mapMountain mapMountainTwo"></div>
+                <div class="mapRiver"></div>
+                <div class="mapRoad mapRoadOne"></div>
+                <div class="mapRoad mapRoadTwo"></div>
+                <div class="mapRoad mapRoadThree"></div>
+                <div class="mapLocation mapLocationOne" data-map-level="1"><span>1</span><b>DESA</b></div>
+                <div class="mapLocation mapLocationTwo" data-map-level="2"><span>2</span><b>HUTAN</b></div>
+                <div class="mapLocation mapLocationThree" data-map-level="3"><span>3</span><b>GUNUNG</b></div>
+                <div class="mapLocation mapLocationFour" data-map-level="4"><span>4</span><b>RERUNTUHAN</b></div>
+                <div class="mapLocation mapLocationFive" data-map-level="5"><span>5</span><b>KASTIL</b></div>
+                <div id="playerMapMarker" class="playerMapMarker" aria-label="Lokasi pemain">P</div>
+            </div>
+
+            <p id="mapDescription" class="mapDescription">Monster menunggu di wilayah ini.</p>
+            <button id="beginBattle" class="pixelButton largeButton">MULAI PERTARUNGAN</button>
+        </div>
+    </div>
+</div>
+
+<div id="gameScreen" class="screen">
+
+    <canvas id="gameCanvas" width="960" height="540"></canvas>
+
+    <div id="hud">
+
+        <div class="hudBox">
+            <span id="playerName">KNIGHT</span>
+        </div>
+
+        <div class="hudBox healthBox">
+            <span>HP</span>
+            <span id="hearts"></span>
+        </div>
+
+        <div class="hudBox">
+            SCORE
+            <span id="score">0</span>
+        </div>
+
+        <div class="hudBox">
+            LEVEL
+            <span id="levelNumber">1</span>
+        </div>
+
+    </div>
+
+    <div id="magePowers" class="magePowers" aria-label="Pilih kekuatan mage">
+        <div class="powerTitle">KEKUATAN MAGE</div>
+        <button class="powerButton selected" data-power="arcane" type="button">
+            <b>1. ARCANE BOLT</b>
+            <small>Cepat • 1 target</small>
+        </button>
+        <button class="powerButton" data-power="meteor" type="button">
+            <b>2. METEOR BURST</b>
+            <small>Lambat • area</small>
+        </button>
+    </div>
+
+    <div id="enemyInfo">
+        MONSTER TERSISA:
+        <span id="enemyCount">0</span>
+    </div>
+
+    <div id="combatText"></div>
+
+    <div id="exitMessage">
+        <h2>LEVEL SELESAI!</h2>
+        <p>Tekan SPACE untuk melanjutkan</p>
+    </div>
+
+    <div id="pauseMenu" class="pauseMenu" aria-hidden="true">
+        <div class="pausePanel">
+            <h2>PERMAINAN DIJEDA</h2>
+            <p>Apakah ingin kembali ke menu?</p>
+            <div class="pauseActions">
+                <button id="resumeButton" class="pixelButton">LANJUT</button>
+                <button id="returnMenuButton" class="pixelButton secondaryButton">KEMBALI KE MENU</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="levelStory" class="levelStory" aria-hidden="true">
+        <div class="levelStoryPanel">
+            <p class="levelStoryEyebrow">LEVEL 1 · FOREST VILLAGE</p>
+            <h2>SUMPAH SANG PELINDUNG</h2>
+            <div class="levelStoryDialogue">
+                <strong id="levelStorySpeaker">Cadias Drankevall</strong>
+                <p>"Aku bersumpah akan melindungi masa depan North Kingdom dengan nyawaku...Selama aku masih bernafas, tidak akan kubiarkan para goblin-goblin itu merenggut harapan rakyat..."</p>
+            </div>
+            <button id="continueLevelStory" class="pixelButton largeButton">MULAI PERTARUNGAN</button>
+        </div>
+    </div>
+</div>
+
+<div id="endingScreen" class="screen">
+
+    <div id="endingScene1" class="endingScene activeEndingScene">
+        <div class="endingSkyline">
+            <div class="endingMountain endingMountainBack"></div>
+            <div class="endingMountain endingMountainFront"></div>
+            <div class="endingCastleBackdrop">
+                <div class="endingCastleTower towerLeft"></div>
+                <div class="endingCastleTower towerRight"></div>
+                <div class="endingCastleKeep"></div>
+            </div>
+            <div class="endingMeadow"></div>
+        </div>
+        <div class="endingText">
+            <h1>KERJAAN TELAH SELAMAT</h1>
+
+            <p>
+                Setelah mengalahkan seluruh pasukan monster,
+                sang pahlawan kembali ke kerajaan. Mendengar kabar <strong id="endingHeroName">sang pahlawan</strong> telah kembali ke kerajaan, Sang Raja Sylvain memberikan tawaran pada <strong id="endingHeroName">sang pahlawan</strong> untuk menikahi putrinya.
+                Dan atas keberaniannya, <strong id="endingHeroName">sang pahlawan</strong> menikahi Putri Elnora Etrama Salvatore.
+            </p>
+
+            <div id="endingDialogue" class="endingDialogue" aria-live="polite">
+                <strong id="endingSpeaker">Putri Elnora</strong>
+                <p id="endingDialogueText"></p>
+            </div>
+
+            <button id="nextEnding" class="pixelButton">
+                DIALOG BERIKUTNYA
+            </button>
+        </div>
+    </div>
+
+    <div id="endingScene2" class="endingScene">
+        <video
+            id="endingVideo"
+            class="endingVideo"
+            src="ending2.mp4"
+            autoplay
+            muted
+            playsinline
+            preload="auto"
+        ></video>
+        <div class="endingText">
+            <h1>KEDAMAIAN KERAJAAN</h1>
+
+            <p>
+                Dan setelah itu kerajaan kebali hidup dalam kedamaian dan <strong id="endingHeroName">sang pahlawan</strong> hidup bahagia bersama Putri Elnora Etrama Salvatore.
+            </p>
+
+            <button id="nextEnding3" class="pixelButton">
+                LANJUT KE MASA DEPAN
+            </button>
+        </div>
+    </div>
+
+    <div id="endingScene3" class="endingScene">
+        <div class="endingText">
+            <h1>ANUGERAH KECIL KERAJAAN</h1>
+
+            <p>
+                Lebih dari satu tahun setelah pernikahan mereka, sang pahlawan dan Putri Elnora Etrama Salvatore dikaruniai seorang putra.
+                Kehadiran sang putra membawa kebahagiaan baru bagi keluarga kerajaan dan seluruh rakyat North Kingdom.
+            </p>
+
+            <button id="nextEnding4" class="pixelButton">
+                LANJUT KE DIALOG
+            </button>
+        </div>
+    </div>
+
+    <div id="endingScene4" class="endingScene">
+        <div class="endingText">
+            <h1>WARISAN MASA DEPAN</h1>
+
+            <div id="ending4Dialogue" class="endingDialogue" aria-live="polite">
+                <strong id="ending4Speaker">Putri Elnora Etrama Salvatore</strong>
+                <p id="ending4DialogueText"></p>
+            </div>
+
+            <button id="nextEnding4Dialogue" class="pixelButton">
+                DIALOG BERIKUTNYA
+            </button>
+        </div>
+    </div>
+</div>
+
+<audio id="bgMusic" loop>
+    <source src="Kingdom Wars 2_ Battles OST [qr0LXn89oDg].mp3" type="audio/mpeg">
+</audio>
+
+<audio id="endingMusic">
+    <source src="Golden Hour - JVKE - Cinematic Violin Cover.mp3" type="audio/mpeg">
+</audio>
+
+<script src="inner.js"></script>
+
+</body>
+</html>
